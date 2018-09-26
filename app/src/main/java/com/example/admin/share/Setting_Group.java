@@ -11,6 +11,6 @@ public class Setting_Group extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_setting__group);
+        setContentView(R.layout.activity_tab);
     }
 }

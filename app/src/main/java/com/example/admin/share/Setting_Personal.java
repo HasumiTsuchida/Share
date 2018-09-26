@@ -13,6 +13,6 @@ public class Setting_Personal extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_setting__personal);
+        setContentView(R.layout.activity_tab);
     }
 }
