@@ -17,16 +17,7 @@ public class Tab extends AppCompatActivity {
 
         OriginalFragmentPagerAdapter adapter = new OriginalFragmentPagerAdapter(getSupportFragmentManager());
         ViewPager viewPager = findViewById(R.id.viewPager);
-        switch (viewPager.getId()){
 
-            case 2:
-                Intent intent2 = new Intent(Tab.this,Setting_Group.class);
-                startActivity(intent2);
-            case 3:
-                Intent intent3 = new Intent(Tab.this,Setting_Other.class);
-                startActivity(intent3);
-
-        }
         viewPager.setOffscreenPageLimit(3);
         viewPager.setAdapter(adapter);
 
