@@ -12,16 +12,5 @@ public class Setting_Group extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting__group);
-
-        Button back_login_top_button=(Button)findViewById(R.id.back_login_top_button);
-
-        back_login_top_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Setting_Group.this,Login_TOP.class);
-                startActivity(intent);
-            }
-        });
-
     }
 }

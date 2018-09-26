@@ -14,23 +14,5 @@ public class Setting_Personal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting__personal);
-
-        Button setting_personal_button=(Button)findViewById(R.id.setting_personal_button);
-        Button back_login_top_button=(Button)findViewById(R.id.back_login_top_button);
-
-        setting_personal_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Setting_Personal.this,Setting_Personal.class);
-                startActivity(intent);
-            }
-        });
-        back_login_top_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Setting_Personal.this,Login_TOP.class);
-                startActivity(intent);
-            }
-        });
     }
 }

@@ -28,6 +28,26 @@ public class Main1Fragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        Button setting_personal_button=view.findViewById(R.id.setting_personal_button);
+        Button back_login_top_button=view.findViewById(R.id.back_login_top_button);
+
+        setting_personal_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),Setting_Personal.class);
+                startActivity(intent);
+            }
+        });
+
+        back_login_top_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),Login_TOP.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 }
