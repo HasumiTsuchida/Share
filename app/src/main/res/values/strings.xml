@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Share</string>
+    <string name="theme_share">Share</string>
+    <string name="insert_member_page_button">メンバー登録</string>
+
+    <string name="hozon_button">保存</string>
+    <string name="disp_insert_member_name">個人表示名</string>
+    <string name="form_insert_member_name">個人表示名入力フォーム</string>
+    <string name="mail_address">メールアドレス（ログインID）</string>
+    <string name="password_flg">パスワード設定</string>
+    <string name="password_flg_true">設定あり</string>
+    <string name="password_flg_false">設定なし</string>
+    <string name="notification_setting">通知設定</string>
+    <string name="notification_times">通知間隔</string>
+    <string name="notification_message">回に１度通知する</string>
+
+    <string name="back_top_button">TOP</string>
+    <string name="back_page_button">戻る</string>
+
+    <string name="complete_insert_message">メンバー登録完了しました。</string>
+    <string name="complete_insert_message2">シェアしたい場合は「設定から」</string>
+    <string name="complete_insert_message3">共有URLをシェアしてください。</string>
+
+    <string name="menu_and_plan_button">献立＆予定</string>
+    <string name="food_button">冷蔵庫</string>
+    <string name="setting_button">設定</string>
+
+    <string name="category_washoku">和食</string>
+    <string name="category_yoshoku">洋食</string>
+    <string name="category_chuka">中華</string>
+    <string name="disp_main">主菜</string>
+    <string name="disp_sub">副菜</string>
+    <string name="disp_soup">汁</string>
+    <string name="disp_desert">デザート</string>
+    <string name="disp_message">連絡事項</string>
+    <string name="message_flg">済</string>
+
+    <string name="disp_without_dish_member">飯抜きメンバー</string>
+
+    <string name="theme_food">早く消化したい食材</string>
+    <string name="edit_form_button">項目編集</string>
+
+    <string name="disp_food_name">食品名</string>
+    <string name="food_limit">賞味期限</string>
+    <string name="disp_food_limit_year">年</string>
+    <string name="disp_food_limit_month">月</string>
+    <string name="disp_food_limit_day">日</string>
+    <string name="disp_save_type">保存種別</string>
+    <string name="save_type_child">冷蔵</string>
+    <string name="save_type_ice">冷凍</string>
+    <string name="save_type_dry">乾燥</string>
+    <string name="save_type_cooking">調理</string>
+    <string name="planning_message">変更予定</string>
+    <string name="notification_flg_true">通知あり</string>
+
+    <string name="share_member_URL_message">共有メンバー招待URL</string>
+    <string name="share_member">共有メンバー一覧</string>
+
+    <string name="setting_back_color">背景色</string>
+    <string name="setting_font">フォント</string>
+    <string name="setting_font_size">フォントサイズ</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
