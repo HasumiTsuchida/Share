@@ -33,7 +33,7 @@ public class Main3Fragment extends Fragment {
         setting_personal_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(),Setting_Other.class);
+                Intent intent = new Intent(getActivity(),Tab.class);
                 startActivity(intent);
             }
         });
