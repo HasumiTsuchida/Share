@@ -26,7 +26,8 @@
         <activity android:name=".Setting_Personal" />
         <activity android:name=".Setting_Other" />
         <activity android:name=".Input_Menu_Detail" />
-        <activity android:name=".Input_Plan"></activity>
+        <activity android:name=".Input_Plan" />
+        <activity android:name=".Tab"></activity>
     </application>
 
 </manifest>

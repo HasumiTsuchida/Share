@@ -13,29 +13,10 @@ public class Setting_Personal extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tab_layout);
-
-        OriginalFragmentPagerAdapter adapter = new OriginalFragmentPagerAdapter(getSupportFragmentManager());
-        ViewPager viewPager = findViewById(R.id.viewPager);
-        switch (viewPager.getId()){
-
-            case 2:
-                Intent intent2 = new Intent(Setting_Personal.this,Setting_Group.class);
-                startActivity(intent2);
-            case 3:
-                Intent intent3 = new Intent(Setting_Personal.this,Setting_Other.class);
-                startActivity(intent3);
-
-        }
-        viewPager.setOffscreenPageLimit(3);
-        viewPager.setAdapter(adapter);
-
-        TabLayout tabLayout = findViewById(R.id.tabLayout);
-        tabLayout.setupWithViewPager(viewPager);
+        setContentView(R.layout.activity_setting__personal);
 
         Button setting_personal_button=(Button)findViewById(R.id.setting_personal_button);
         Button back_login_top_button=(Button)findViewById(R.id.back_login_top_button);
-
 
         setting_personal_button.setOnClickListener(new View.OnClickListener() {
             @Override
