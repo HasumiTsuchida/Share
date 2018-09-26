@@ -2,30 +2,10 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     tools:context=".Setting_Personal">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="465dp"
-        android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <android.support.design.widget.TabLayout
-            android:id="@+id/tabLayout"
-            style="@style/MyCustomTabLayout"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:background="@color/colorPrimary"
-            android:elevation="4dp" />
-
-        <android.support.v4.view.ViewPager
-            android:id="@+id/viewPager"
-            android:layout_width="match_parent"
-            android:layout_height="399dp"
-            android:background="@color/whiteColor" />
-    </LinearLayout>
     <Button
         android:id="@+id/setting_personal_button"
         android:layout_width="69dp"
