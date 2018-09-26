@@ -3,11 +3,14 @@ package com.example.admin.share;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.AdapterView;
+import android.widget.Toast;
 
 import java.util.Date;
 
@@ -17,11 +20,18 @@ public class Calendar_TOP extends AppCompatActivity {
     private Button prevButton, nextButton;
     private CalendarAdapter mCalendarAdapter;
     private GridView calendarGridView;
+    private GestureDetector mGestureDetector;
+    private static final int SWIPE_MIN_DISTANCE = 50;
+    private static final int SWIPE_MAX_OFF_PATH = 250;
+    private static final int SWIPE_THRESHOLD_VELOCITY = 200;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar__top);
+
+        mGestureDetector = new GestureDetector(this, mOnGestureListener);
 
         Button back_login_top_button=(Button)findViewById(R.id.back_login_top_button);
 
@@ -71,4 +81,40 @@ public class Calendar_TOP extends AppCompatActivity {
             }
         });
     }
+    // これがないとGestureDetectorが動かない
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        return mGestureDetector.onTouchEvent(event);
+    }
+
+    private final GestureDetector.SimpleOnGestureListener mOnGestureListener = new GestureDetector.SimpleOnGestureListener() {
+        @Override
+        public boolean onFling(MotionEvent event1, MotionEvent event2, float velocityX, float velocityY) {
+
+            try {
+
+                if (Math.abs(event1.getY() - event2.getY()) > SWIPE_MAX_OFF_PATH) {
+                    // 縦の移動距離が大きすぎる場合は無視
+                    return false;
+                }
+
+                if (event1.getX() - event2.getX() > SWIPE_MIN_DISTANCE && Math.abs(velocityX) > SWIPE_THRESHOLD_VELOCITY) {
+                    // 開始位置から終了位置の移動距離が指定値より大きい
+                    // X軸の移動速度が指定値より大きい
+                    mCalendarAdapter.nextMonth();
+                    titleText.setText(mCalendarAdapter.getTitle());
+
+                } else if (event2.getX() - event1.getX() > SWIPE_MIN_DISTANCE && Math.abs(velocityX) > SWIPE_THRESHOLD_VELOCITY) {
+                    // 終了位置から開始位置の移動距離が指定値より大きい
+                    // X軸の移動速度が指定値より大きい
+                    mCalendarAdapter.prevMonth();
+                    titleText.setText(mCalendarAdapter.getTitle());
+                }
+
+            } catch (Exception e) {
+                // nothing
+            }
+            return false;
+        }
+    };
 }
