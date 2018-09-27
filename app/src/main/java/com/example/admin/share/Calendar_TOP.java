@@ -64,26 +64,30 @@ public class Calendar_TOP extends AppCompatActivity {
         mCalendarAdapter = new CalendarAdapter(this);
         calendarGridView.setAdapter(mCalendarAdapter);
         titleText.setText(mCalendarAdapter.getTitle());
-        calendarGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                //日付を取得できた↓
-                String test = mCalendarAdapter.getDay(position);
-                //TODO 日付とshare_id で検索結果があれば、値をつめて表示。
-                // (返却される日付フォーマット例：2018/09/20)
-                boolean hasResult = true;
-                if(hasResult) {
-                    Intent intent = new Intent(Calendar_TOP.this, Input_Menu_Detail.class);
-                    startActivity(intent);
-                }else{
-                    Intent intent = new Intent(Calendar_TOP.this, Input_Menu_Detail.class);
-                    startActivity(intent);
-                }
-            }
-        });
+
     }
     // これがないとGestureDetectorが動かない
     @Override
-    public boolean onTouchEvent(MotionEvent event) {
+    public boolean dispatchTouchEvent(MotionEvent event) {
+        switch ( event.getAction() ) {
+
+            case MotionEvent.ACTION_DOWN:
+                //画面がタッチされたときの動作
+
+                break;
+
+            case MotionEvent.ACTION_MOVE:
+                //タッチしたまま移動したときの動作
+                break;
+
+            case MotionEvent.ACTION_UP:
+                //タッチが離されたときの動作
+                break;
+
+            case MotionEvent.ACTION_CANCEL:
+                //他の要因によってタッチがキャンセルされたときの動作
+                break;
+        }
         return mGestureDetector.onTouchEvent(event);
     }
 
@@ -114,6 +118,26 @@ public class Calendar_TOP extends AppCompatActivity {
             } catch (Exception e) {
                 // nothing
             }
+            return false;
+        }
+        @Override
+        public boolean onDown(MotionEvent event) {
+            calendarGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    //日付を取得できた↓
+                    String test = mCalendarAdapter.getDay(position);
+                    //TODO 日付とshare_id で検索結果があれば、値をつめて表示。
+                    // (返却される日付フォーマット例：2018/09/20)
+                    boolean hasResult = true;
+                    if(hasResult) {
+                        Intent intent = new Intent(Calendar_TOP.this, Input_Menu_Detail.class);
+                        startActivity(intent);
+                    }else{
+                        Intent intent = new Intent(Calendar_TOP.this, Input_Menu_Detail.class);
+                        startActivity(intent);
+                    }
+                }
+            });
             return false;
         }
     };
