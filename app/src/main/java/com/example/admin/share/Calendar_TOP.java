@@ -10,7 +10,6 @@ import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.AdapterView;
-import android.widget.Toast;
 
 import java.util.Date;
 
@@ -33,12 +32,12 @@ public class Calendar_TOP extends AppCompatActivity {
 
         mGestureDetector = new GestureDetector(this, mOnGestureListener);
 
-        Button back_login_top_button=(Button)findViewById(R.id.back_login_top_button);
+        Button back_login_top_button = (Button) findViewById(R.id.back_login_top_button);
 
         back_login_top_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Calendar_TOP.this,Login_TOP.class);
+                Intent intent = new Intent(Calendar_TOP.this, Login_TOP.class);
                 startActivity(intent);
             }
         });
@@ -64,13 +63,12 @@ public class Calendar_TOP extends AppCompatActivity {
         mCalendarAdapter = new CalendarAdapter(this);
         calendarGridView.setAdapter(mCalendarAdapter);
         titleText.setText(mCalendarAdapter.getTitle());
-
     }
+
     // これがないとGestureDetectorが動かない
     @Override
     public boolean dispatchTouchEvent(MotionEvent event) {
-        switch ( event.getAction() ) {
-
+        switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 //画面がタッチされたときの動作
 
@@ -120,19 +118,20 @@ public class Calendar_TOP extends AppCompatActivity {
             }
             return false;
         }
+
         @Override
         public boolean onDown(MotionEvent event) {
             calendarGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     //日付を取得できた↓
-                    String test = mCalendarAdapter.getDay(position);
+                    //      String test = mCalendarAdapter.getDay(position);
                     //TODO 日付とshare_id で検索結果があれば、値をつめて表示。
                     // (返却される日付フォーマット例：2018/09/20)
                     boolean hasResult = true;
-                    if(hasResult) {
+                    if (hasResult) {
                         Intent intent = new Intent(Calendar_TOP.this, Input_Menu_Detail.class);
                         startActivity(intent);
-                    }else{
+                    } else {
                         Intent intent = new Intent(Calendar_TOP.this, Input_Menu_Detail.class);
                         startActivity(intent);
                     }

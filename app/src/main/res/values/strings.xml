@@ -12,13 +12,13 @@
     <string name="password_flg_false">設定なし</string>
     <string name="notification_setting">通知設定</string>
     <string name="notification_times">通知間隔</string>
-    <string name="notification_message">回に１度通知する</string>
+    <string name="notification_message">時間毎に通知する</string>
 
     <string name="back_top_button">TOP</string>
     <string name="back_page_button">戻る</string>
 
     <string name="complete_insert_message">メンバー登録完了しました。</string>
-    <string name="complete_insert_message2">シェアしたい場合は「設定から」</string>
+    <string name="complete_insert_message2">シェアしたい場合は「設定」から</string>
     <string name="complete_insert_message3">共有URLをシェアしてください。</string>
 
     <string name="menu_and_plan_button">献立＆予定</string>
@@ -60,7 +60,26 @@
     <string name="setting_font">フォント</string>
     <string name="setting_font_size">フォントサイズ</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="back_ground_color_list">
+        <item>白</item>
+        <item>赤</item>
+        <item>青</item>
+        <item>黄色</item>
+        <item>黒</item>
+    </string-array>
+
+    <string-array name="font_list">
+        <item>黒</item>
+        <item>濃赤</item>
+        <item>濃青</item>
+        <item>濃黄色</item>
+    </string-array>
+
+    <string-array name="font_size_list">
+        <item>最小</item>
+        <item>小</item>
+        <item>中</item>
+        <item>最大</item>
+    </string-array>
 
 </resources>

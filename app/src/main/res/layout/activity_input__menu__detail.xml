@@ -56,53 +56,53 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.033" />
 
-    <CheckBox
-        android:id="@+id/category_chuka"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/category_chuka"
+    <RadioGroup
+        android:id="@+id/radiogroup_save_type"
+        android:layout_width="282dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.469"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.139" />
+        app:layout_constraintVertical_bias="0.146">
 
-    <CheckBox
-        android:id="@+id/message_flg"
-        android:layout_width="61dp"
-        android:layout_height="22dp"
-        android:text="@string/message_flg"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.366"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.835" />
+        <RadioButton
+            android:id="@+id/category_washoku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category_washoku"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.139" />
 
-    <CheckBox
-        android:id="@+id/category_yoshoku"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/category_yoshoku"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.256"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.139" />
+        <RadioButton
+            android:id="@+id/category_yoshoku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category_yoshoku"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.256"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.139" />
 
-    <CheckBox
-        android:id="@+id/category_washoku"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/category_washoku"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.139" />
+        <RadioButton
+            android:id="@+id/category_chuka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category_chuka"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.469"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.139" />
+    </RadioGroup>
 
     <TextView
         android:id="@+id/disp_main"
@@ -141,6 +141,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.511" />
 
+    <CheckBox
+        android:id="@+id/message_flg"
+        android:layout_width="61dp"
+        android:layout_height="22dp"
+        android:text="@string/message_flg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.812" />
+
     <TextView
         android:id="@+id/disp_message"
         android:layout_width="wrap_content"
@@ -152,7 +164,7 @@
         app:layout_constraintHorizontal_bias="0.147"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.833" />
+        app:layout_constraintVertical_bias="0.805" />
 
     <TextView
         android:id="@+id/disp_desert2"
@@ -169,11 +181,12 @@
 
     <EditText
         android:id="@+id/desert"
-        android:layout_width="wrap_content"
+        android:layout_width="242dp"
         android:layout_height="42dp"
         android:ems="10"
+        android:hint="アイスクリーム"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
@@ -183,11 +196,12 @@
 
     <EditText
         android:id="@+id/soup"
-        android:layout_width="wrap_content"
-        android:layout_height="39dp"
+        android:layout_width="242dp"
+        android:layout_height="42dp"
         android:ems="10"
+        android:hint="コンソメスープ"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
@@ -197,11 +211,12 @@
 
     <EditText
         android:id="@+id/sub"
-        android:layout_width="wrap_content"
-        android:layout_height="39dp"
+        android:layout_width="242dp"
+        android:layout_height="42dp"
         android:ems="10"
+        android:hint="サラダ"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
@@ -211,25 +226,24 @@
 
     <EditText
         android:id="@+id/message"
-        android:layout_width="wrap_content"
-        android:layout_height="42dp"
+        android:layout_width="242dp"
+        android:layout_height="68dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.92" />
+        app:layout_constraintVertical_bias="0.966" />
 
     <EditText
         android:id="@+id/main"
-        android:layout_width="wrap_content"
+        android:layout_width="242dp"
         android:layout_height="42dp"
         android:ems="10"
+        android:hint="ハンバーグ"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"

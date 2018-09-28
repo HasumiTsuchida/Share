@@ -51,6 +51,8 @@
                 android:layout_marginStart="77dp"
                 android:layout_marginVertical="10dp"
                 android:background="@color/colorAccent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
                 android:text="Prev" />
 
             <Button
@@ -62,6 +64,8 @@
                 android:layout_marginEnd="76dp"
                 android:layout_marginVertical="10dp"
                 android:background="@color/colorAccent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
                 android:text="Next" />
         </RelativeLayout>
 
