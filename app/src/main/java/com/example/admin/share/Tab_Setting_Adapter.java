@@ -5,11 +5,11 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.view.ViewGroup;
 
-public class OriginalFragmentPagerAdapter extends FragmentPagerAdapter {
+public class Tab_Setting_Adapter extends FragmentPagerAdapter {
 
     private CharSequence[] tabTitles = {"個人設定", "グループ設定", "その他設定"};
 
-    public OriginalFragmentPagerAdapter(FragmentManager fm) {
+    public Tab_Setting_Adapter(FragmentManager fm) {
         super(fm);
     }
 

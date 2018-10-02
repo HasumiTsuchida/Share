@@ -27,7 +27,8 @@
         <activity android:name=".Setting_Other" />
         <activity android:name=".Input_Menu_Detail" />
         <activity android:name=".Input_Plan" />
-        <activity android:name=".Tab"></activity>
+        <activity android:name=".Tab_Setting" />
+        <activity android:name=".Tab_Day_Detail"></activity>
     </application>
 
 </manifest>

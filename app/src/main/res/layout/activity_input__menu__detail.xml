@@ -14,10 +14,10 @@
         android:text="予定"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.256"
+        app:layout_constraintHorizontal_bias="0.257"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.033" />
+        app:layout_constraintVertical_bias="0.103" />
 
     <Button
         android:id="@+id/back_page_button"
@@ -27,10 +27,10 @@
         android:text="@string/back_page_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintHorizontal_bias="0.707"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.038" />
+        app:layout_constraintVertical_bias="0.101" />
 
     <Button
         android:id="@+id/insert_menu_button"
@@ -42,7 +42,7 @@
         app:layout_constraintHorizontal_bias="0.938"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.038" />
+        app:layout_constraintVertical_bias="0.105" />
 
     <Button
         android:id="@+id/view_menu_detail_input_form"
@@ -51,10 +51,10 @@
         android:text="献立"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.033" />
+        app:layout_constraintVertical_bias="0.105" />
 
     <RadioGroup
         android:id="@+id/radiogroup_save_type"
@@ -65,7 +65,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.146">
+        app:layout_constraintVertical_bias="0.186">
 
         <RadioButton
             android:id="@+id/category_washoku"
@@ -114,7 +114,7 @@
         app:layout_constraintHorizontal_bias="0.133"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.232" />
+        app:layout_constraintVertical_bias="0.26" />
 
     <TextView
         android:id="@+id/disp_sub"
@@ -126,7 +126,7 @@
         app:layout_constraintHorizontal_bias="0.133"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.377" />
+        app:layout_constraintVertical_bias="0.405" />
 
     <TextView
         android:id="@+id/disp_soup"
@@ -139,7 +139,7 @@
         app:layout_constraintHorizontal_bias="0.127"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.511" />
+        app:layout_constraintVertical_bias="0.542" />
 
     <CheckBox
         android:id="@+id/message_flg"
@@ -151,7 +151,7 @@
         app:layout_constraintHorizontal_bias="0.366"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.812" />
+        app:layout_constraintVertical_bias="0.879" />
 
     <TextView
         android:id="@+id/disp_message"
@@ -164,7 +164,7 @@
         app:layout_constraintHorizontal_bias="0.147"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.805" />
+        app:layout_constraintVertical_bias="0.873" />
 
     <TextView
         android:id="@+id/disp_desert2"
@@ -177,57 +177,54 @@
         app:layout_constraintHorizontal_bias="0.147"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.659" />
+        app:layout_constraintVertical_bias="0.706" />
 
     <EditText
         android:id="@+id/desert"
         android:layout_width="242dp"
-        android:layout_height="42dp"
+        android:layout_height="35dp"
         android:ems="10"
         android:hint="アイスクリーム"
         android:inputType="textPersonName"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.737" />
+        app:layout_constraintVertical_bias="0.798" />
 
     <EditText
         android:id="@+id/soup"
         android:layout_width="242dp"
-        android:layout_height="42dp"
+        android:layout_height="36dp"
         android:ems="10"
         android:hint="コンソメスープ"
         android:inputType="textPersonName"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.586" />
+        app:layout_constraintVertical_bias="0.63" />
 
     <EditText
         android:id="@+id/sub"
         android:layout_width="242dp"
-        android:layout_height="42dp"
+        android:layout_height="39dp"
         android:ems="10"
         android:hint="サラダ"
         android:inputType="textPersonName"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.437" />
+        app:layout_constraintVertical_bias="0.476" />
 
     <EditText
         android:id="@+id/message"
         android:layout_width="242dp"
-        android:layout_height="68dp"
+        android:layout_height="39dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -239,16 +236,15 @@
     <EditText
         android:id="@+id/main"
         android:layout_width="242dp"
-        android:layout_height="42dp"
+        android:layout_height="39dp"
         android:ems="10"
         android:hint="ハンバーグ"
         android:inputType="textPersonName"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.286" />
+        app:layout_constraintVertical_bias="0.323" />
 
 </android.support.constraint.ConstraintLayout>

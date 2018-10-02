@@ -34,7 +34,7 @@ public class Login_TOP extends AppCompatActivity {
         setting_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Login_TOP.this,Tab.class);
+                Intent intent = new Intent(Login_TOP.this,Tab_Setting.class);
                 startActivity(intent);
             }
         });

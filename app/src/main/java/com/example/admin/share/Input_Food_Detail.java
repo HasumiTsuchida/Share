@@ -30,5 +30,6 @@ public class Input_Food_Detail extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }

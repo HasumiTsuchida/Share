@@ -65,9 +65,12 @@ public class Calendar_TOP extends AppCompatActivity {
         titleText.setText(mCalendarAdapter.getTitle());
     }
 
+    //TODO
     // これがないとGestureDetectorが動かない
+    //onTouchEvent() でクリック可能(１度フリック後)
+    //dispatchTouchEvent() でフリック可能
     @Override
-    public boolean dispatchTouchEvent(MotionEvent event) {
+    public boolean onTouchEvent(MotionEvent event) {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 //画面がタッチされたときの動作
@@ -129,10 +132,10 @@ public class Calendar_TOP extends AppCompatActivity {
                     // (返却される日付フォーマット例：2018/09/20)
                     boolean hasResult = true;
                     if (hasResult) {
-                        Intent intent = new Intent(Calendar_TOP.this, Input_Menu_Detail.class);
+                        Intent intent = new Intent(Calendar_TOP.this, Tab_Day_Detail.class);
                         startActivity(intent);
                     } else {
-                        Intent intent = new Intent(Calendar_TOP.this, Input_Menu_Detail.class);
+                        Intent intent = new Intent(Calendar_TOP.this, Tab_Day_Detail.class);
                         startActivity(intent);
                     }
                 }

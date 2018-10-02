@@ -31,7 +31,7 @@
         app:layout_constraintVertical_bias="0.938" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editText_member_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/form_insert_member_name"
@@ -109,8 +109,9 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.607" />
     </RadioGroup>
+
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/editText_password"
         android:layout_width="wrap_content"
         android:layout_height="36dp"
         android:ems="10"
@@ -139,7 +140,7 @@
         app:layout_constraintVertical_bias="0.393" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/editText_mail_address"
         android:layout_width="206dp"
         android:layout_height="39dp"
         android:ems="10"
@@ -167,7 +168,7 @@
         app:layout_constraintVertical_bias="0.776" />
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/editText_notification_times"
         android:layout_width="29dp"
         android:layout_height="39dp"
         android:ems="10"

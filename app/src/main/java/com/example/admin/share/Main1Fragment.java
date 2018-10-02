@@ -1,8 +1,6 @@
 package com.example.admin.share;
 
-import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -35,7 +33,7 @@ public class Main1Fragment extends Fragment {
         setting_personal_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(),Tab.class);
+                Intent intent = new Intent(getActivity(),Tab_Setting.class);
                 startActivity(intent);
             }
         });
